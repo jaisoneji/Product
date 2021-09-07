@@ -13,10 +13,11 @@ body{
 
 /* ---------Navbar------- */
 nav{
+    background-color: white;
     font-family: 'Poppins', sans-serif;
     width:100%;
     height:48px;
-    box-shadow: rgba(19, 18, 18, 0.2) 0px 8px 24px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }
 .site-name-div{
@@ -46,6 +47,7 @@ nav{
     margin:0px 8px;
 }
 .navbar{
+    
     overflow: hidden;
     height:100%;
     width:100%;
@@ -84,7 +86,7 @@ nav{
 .product-display{
     background-color: white;
     padding:8px;
-    margin-top:16px;
+    margin-top:4px;
     display:flex;
     flex-direction: column;
 }
@@ -190,21 +192,44 @@ nav{
 .website-price-container{
     display: flex;
     flex-direction: column;
+   
+    margin:0;
+    padding: 0;
 }
 .website-price{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.website-logo-container{
+    overflow: hidden;
     
-    width:30%;
+    width:100%;
+    margin:0;
+    padding: 0;
     height:auto;
 }
-.website-logo{
-    justify-content: center;
+.website-logo-container-att{
     width:100%;
-    height:100%;
+    height: 4rem; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    background-image: url("assets/att.png");
+}
+.website-logo-container-sprint{
+    width:100%; 
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    background-image: url("assets/sprint.png");
+}
+.website-logo-container-verizon{
+    width:100%; 
+    height: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    overflow: hidden;
+    background-image: url("assets/verizon.png");
 }
 .website-price h3{
     width: 100%;
@@ -219,6 +244,7 @@ nav{
 }
 .features-ad-related{
     margin-top: 10px;
+    background-color: white;
 }
 .feature-detail{
     margin-top:10px;
@@ -274,23 +300,195 @@ nav{
     color: #637FFF;
     margin-top: -15px;
 }
+/* ---------Review Section------- */
+.reviews-container,.review-sentiment{
+    width:100%;
+    margin-top: 4px;
+    /* margin-bottom: 4px; */
+}
+.review-header,.compare-header{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 8px;
+}
+.review-naming,.compare-naming{
+    display: flex;
+    align-items: center;
+}
+.review-naming i{
+    color: #15cfb5;
+}
+.review-naming h3{
+    padding-left: 4px;
+    font-size: medium;
+    font-weight: bold;
+}
+.drop-down{
+    background-color: none;
+    border:none;
 
-
-/* -----Responsive Styles------ */
-@media only screen and (min-width: 600px) {
-    .navbar{
-        width:80%;
-        display:flex;
-        
-        justify-content:space-between;
-    }
-    .tab{
-        display:flex
-    }
-    #hamburger{
-        display:none
-    }
-  }
-@media only screen and (max-width: 600px) {
+}
+.review-container,.charts-container{
+    padding:2px 4px;
+    background-color: white;
     
-  }
+}
+.review-category{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding:2px;
+}
+.review-chip{
+    border:1px solid rgb(59, 58, 58);
+    padding:0px 6px;
+}
+.positive-review-header{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.positive-review-header span{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 4px;
+}
+.positive-review-header i{
+    color: #15cfb5;
+}
+
+.review-rating{
+    margin-top: -10px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+}
+.review{
+    height: fit-content;    
+    margin:0px;
+    line-height: 1.6;
+    padding:0px;
+}
+.review-text{
+    margin-top: -10px;
+    font-size: medium;
+    font-weight: bold;
+}
+.reviewer-name{
+    margin-top: -10px;
+    font-weight: normal;
+    font-size: medium;
+}
+/* -------Compare section-------- */
+.compare-naming i{
+    color: #15cfb5;
+}
+.compare-naming h3{
+    padding-left: 4px;
+    font-size: medium;
+    font-weight: bold;
+}
+/* --------charts section------- */
+.charts-container{
+    width:100%;
+}
+.chart-container{
+    display: flex;
+    width:100%;
+}
+.yaxis-labels{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    width:40%;
+}
+.yaxis-labels h6{
+    font-weight: normal;
+
+}
+.gradient-container{
+    width:100%;
+    height:auto;
+    padding-left:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+.gradient-1{
+    background-color: #eeeeee;
+    width:100%;
+    height: 2rem;
+    background-image: linear-gradient(to right, #4ad7b8, #4fd9b3, #56dbad, #5ddca7, #65dea0, #6be09b, #72e195, #79e38f, #80e588, #87e781, #8fe879, #97ea71,#eeeeee,#eeeeee,#eeeeee,#eeeeee);
+}
+.gradient-2{
+    background-color: #eeeeee;
+    width:100%;
+    height: 2rem;
+    background-image: linear-gradient(to right, #f10773, #f40e69, #f7175f, #f82155, #f92b4b, #fa3243, #fb393b, #fb4033, #fc462b, #fd4d22, #fe5316, #fe5a02,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee);
+}
+.gradient-3{
+    background-color: #eeeeee;
+    width:100%;
+    height: 2rem;
+    background-image: linear-gradient(to right, #00c4f6, #00c6f2, #00c7ed, #00c9e7, #04cae2, #0dcbde, #19cdda, #23ced6, #27cfd2, #2cd0ce, #32d1ca, #39d2c6,#eeeeee,#eeeeee,#eeeeee,#eeeeee,#eeeeee);
+}
+.scale-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+.scale{
+    height:auto;
+    width:65%;
+    border-top: 1px solid rgb(87, 69, 69);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4px;
+}
+.chart-2,.chart-3,.chart-4{
+    margin-top: 2rem;
+}
+.scale-container h4{
+    font-weight: 600;
+}
+/* -----------footer style------ */
+footer{
+    background-color: black;
+}
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image-grid img{
+    width:8rem;
+    padding:6px;
+
+}
+.fab{
+    padding-left:12px;
+    color: white;
+}
+.footer-container h1{
+    color:white;
+    padding: 8px;
+    text-align: justify;
+}
+.footer-container p{
+    color:white;
+    padding: 8px;
+    text-align: justify;
+}
+/* -----Responsive Styles------ */
+

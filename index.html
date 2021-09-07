@@ -7,6 +7,7 @@
 
     <!-- -----External style sheet--- -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="web-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');</style>
     <title>Samsung</title>
@@ -53,11 +54,11 @@
                 <img src="assets/Phone.jpg" alt="" srcset="">
             </div>
             <!-- ----------Product Detail Section-- -->
-            <div>
+            <div id="product-content">
                 <div class="name-rating-section">
                     <div class="product-title-figure">
                         <h2 class="product-title">Samsung Galaxy S8+</h2>
-                        <h3 class="rating-figure" >4.3<i style="color:#ffc800" class="fas fa-star"></i></h3>
+                        <h3 class="rating-figure" >4.3<i style="color:#ffc800" class="fas fa-star"></i><span style="padding:0px 2px;background-color:#f4f9fc">Android 7.0 Nougat</span></h3>
                     </div>
                     <div class="excellent-rating">
                         <img src="assets/rating logo.jpg" style="width:150px;" alt="" srcset="">
@@ -103,11 +104,11 @@
                     <!-- -------4th Feature----- -->
                     <div class="feature-div">
                         <!-- ----Icon--- -->
-                        <div class="feature-icon"><i style="transform: rotate(90deg);" class=" fas fa-battery-empty fa-2x"></i></div> 
+                        <div class="feature-icon"><i  class=" fas fa-battery-empty fa-2x"></i></div> 
                         <!-- ---feature--- -->
-                        <h6 class="feature">16 MP</h6>
+                        <h6 class="feature">500MAH</h6>
                         <!-- ---condition--- -->
-                        <h6 class="condition">Good</h3>
+                        <h6 class="condition">Excellent</h3>
                     </div>
 
                 </div>
@@ -116,8 +117,8 @@
                 <div class="website-price-container">
                     <div class="website-price">
                         <!-- ----company logo---- -->
-                        <div class="website-logo-container">
-                            <img class="website-logo" src="assets/att.png" alt="" srcset="">
+                        <div  class="website-logo-container-att">
+                            <!-- <img class="website-logo" src="assets/att.png" alt="" srcset=""> -->
                         </div>
                         <!-- -----company price----- -->
                         <h3>$29.99for 500 minutes</h3>
@@ -125,8 +126,8 @@
                     <!-- -----2nd company--- -->
                     <div class="website-price">
                         <!-- ----company logo---- -->
-                        <div class="website-logo-container">
-                            <img class="website-logo" src="assets/sprint.png" alt="" srcset="">
+                        <div class="website-logo-container-sprint">
+                            <!-- <img class="website-logo" src="assets/sprint.png" alt="" srcset=""> -->
                         </div>
                         <!-- -----company price----- -->
                         <h3>$29.99for 500 minutes</h3>
@@ -134,8 +135,8 @@
                     <!-- ---3rd comapny--- -->
                     <div class="website-price">
                         <!-- ----company logo---- -->
-                        <div class="website-logo-container">
-                            <img class="website-logo" src="assets/verizon.png" alt="" srcset="">
+                        <div class="website-logo-container-verizon">
+                            <!-- <img class="website-logo" src="assets/verizon.png" alt="" srcset=""> -->
                         </div>
                         <!-- -----company price----- -->
                         <h3>$29.99for 500 minutes</h3>
@@ -149,8 +150,8 @@
             <!-- -----Detailed Features---- -->
             <div class="detailed-features">
                 <!-- ----Camera Feature Heading--- -->
-                <div>
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-camera fa-1x"></i></div>
                         <span style="width:80%;font-size: medium;">Camera</span>
@@ -176,8 +177,8 @@
                     </div>
                 </div>
                 <!-- ----Display Feature Heading--- -->
-                <div style="margin-top: 1rem;" class="">
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div style="margin-top: 1rem;" class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-mobile-alt fa-1x"></i></div>
                         <span style="width:80%;font-size:medium;">Display</span>
@@ -203,8 +204,8 @@
                     </div>
                 </div>
                 <!-- ------Batttery Feature Heading------ -->
-                <div style="margin-top: 1rem;" class="">
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div style="margin-top: 1rem;" class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-battery-empty fa-1x"></i></div>
                         <span style="width:80%;font-size:medium;">Battery</span>
@@ -230,8 +231,8 @@
                     </div>
                 </div>
                 <!-- ------Performance Feature Heading------ -->
-                <div style="margin-top: 1rem;" class="">
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div style="margin-top: 1rem;" class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-microchip fa-1x"></i></div>
                         <span style="width:80%;font-size:medium;">Performance</span>
@@ -257,8 +258,8 @@
                     </div>
                 </div>
                 <!-- ------Storage Feature Heading------ -->
-                <div style="margin-top: 1rem;" class="">
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div style="margin-top: 1rem;" class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-microchip fa-1x"></i></div>
                         <span style="width:80%;font-size:medium;">Storage</span>
@@ -277,8 +278,8 @@
                     </div>
                 </div>
                 <!-- ------Usability Feature Heading------ -->
-                <div style="margin-top: 1rem;" class="">
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div style="margin-top: 1rem;" class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-microchip fa-1x"></i></div>
                         <span style="width:80%;font-size:medium;">Usability</span>
@@ -304,8 +305,8 @@
                     </div>
                 </div>
                 <!-- ------Connectivity Feature Heading------ -->
-                <div style="margin-top: 1rem;" class="">
-                    <div style="width:100%;display:flex;align-items: center;">
+                <div style="margin-top: 1rem;" class="feature-cols">
+                    <div class="feature-headers" style="width:100%;display:flex;align-items: center;">
                         <!-- ----Icon--- -->
                         <div class="feature-icon"><i class=" fas fa-microchip fa-1x"></i></div>
                         <span style="width:80%;font-size:medium;">Connectivity</span>
@@ -332,7 +333,7 @@
                 </div>
             </div>
             <!-- ----Ad and related product section--- -->
-            <div>
+            <div class="ad-related-products">
                 <!-- -----Advertisement----- -->
                 <div class="ad-container">
                     <img src="assets/ad.png" alt="" srcset="">
@@ -411,10 +412,281 @@
                 </div>
             </div>
         </div>
+
+
         <!-- -----Review section-------`- -->
-        <section>
-            
+        <section class="reviews-container">
+            <div class="review-header">
+                <div class="review-naming">
+                    <i class="fas fa-comment-alt"></i>
+                    <h3>Reviews</h3>
+                </div>
+                <div class="sorter">
+                    <span style="font-weight: normal;">Sort By:</span>
+                    <select class="drop-down">
+                        <option value="Relevance">Relevance</option>
+                    </select>
+                </div>
+
+
+            </div>
+            <!-- ----actual review Container---- -->
+            <div class="review-container">
+                <div class="review-category">
+                    <p class="review-chip">All reviews(40)</p>
+                    <p class="review-chip">Wireless(21)</p>
+                    <p class="review-chip">Data(4)</p>
+                    <p class="review-chip">Bluetooth(3)</p>
+                    <p class="review-chip">Carrier(2)</p>
+                    <p class="review-chip">Email(2)</p>
+                    <p class="review-chip">LTE(2)</p>
+                    <p class="review-chip">Email(2)</p>
+                    <p class="review-chip">Range(2)</p>
+                    <p class="review-chip">Signal(2)</p>
+                </div>
+                <div class="review-sentiment">
+                    <div class="positive-review">
+                        <div class="positive-review-header">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>Positive Review</span>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">This is the Best phone ever seen</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">Plastic is fantastic, especially on affordable phones</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">Best buy at this price! The display quality is amazing</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">Good product value for money but ordering is too difficult</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                    </div>
+                    <!-- -------Negative Review------ -->
+                    <div class="positive-review">
+                        <div class="positive-review-header">
+                            <i class="fas fa-minus-circle"></i>
+                            <span>Negative Review</span>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">This is the Best phone ever seen</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">Plastic is fantastic, especially on affordable phones</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">Best buy at this price! The display quality is amazing</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                        <div class="review">
+                            <div class="review-rating">
+                                <h3 style="font-weight: normal" >4.5<i style="color:#ffc800;margin-left: 2px;" class="fas fa-star"></i></h3>
+                                <span style="margin-left: 2px;">26 JAN, 2018</span>
+                            </div>
+                            <h3 class="review-text">Good product value for money but ordering is too difficult</h3>
+                            <h6 class="reviewer-name">JOHN DOE</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
+        <!-- -------Compare Section------ -->
+        <section class="compare-container">
+            <div class="compare-header">
+                <div class="compare-naming">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Compare</h3>
+                </div>
+            </div>
+            <div class="charts-container">
+                <!-- ----1st Chart--- -->
+                <div class="chart-1">
+                    <div class="chart-container">
+                        <div class="yaxis-labels">
+                            <h6>All Phones</h6>
+                            <h6>All Android Phones</h6>
+                            <h6>Current</h6>
+                        </div>
+                        <div class="gradient-container">
+                            <div class="gradient-1"></div>
+                            <div class="gradient-2"></div>
+                            <div class="gradient-3"></div>
+                        </div>
+                    </div>
+                    <div class="scale-container">
+                        <div class="scale">
+                            <span>0</span>
+                            <span>2</span>
+                            <span>4</span>
+                            <span>6</span>
+                            <span>8</span>
+                            <span>10</span>
+                            <span>12</span>
+                            <span>14</span>
+                            <span>16</span>
+                        </div>
+                        <h4 style="width:60%;">Camera (Megapixels)</h4>
+                    </div>
+                </div>
+                <div class="chart-2">
+                    <div class="chart-container">
+                        <div class="yaxis-labels">
+                            <h6>All Phones</h6>
+                            <h6>All Android Phones</h6>
+                            <h6>Current</h6>
+                        </div>
+                        <div class="gradient-container">
+                            <div class="gradient-1"></div>
+                            <div class="gradient-2"></div>
+                            <div class="gradient-3"></div>
+                        </div>
+                    </div>
+                    <div class="scale-container">
+                        <div class="scale">
+                            <span>0</span>
+                            <span>2</span>
+                            <span>4</span>
+                            <span>6</span>
+                            <span>8</span>
+                            <span>10</span>
+                            <span>12</span>
+                            <span>14</span>
+                            <span>16</span>
+                        </div>
+                        <h4 style="width:60%;">RAM (GB)</h4>
+                    </div>
+                </div>
+                <div class="chart-3">
+                    <div class="chart-container">
+                        <div class="yaxis-labels">
+                            <h6>All Phones</h6>
+                            <h6>All Android Phones</h6>
+                            <h6>Current</h6>
+                        </div>
+                        <div class="gradient-container">
+                            <div class="gradient-1"></div>
+                            <div class="gradient-2"></div>
+                            <div class="gradient-3"></div>
+                        </div>
+                    </div>
+                    <div class="scale-container">
+                        <div class="scale">
+                            <span>0</span>
+                            <span>2</span>
+                            <span>4</span>
+                            <span>6</span>
+                            <span>8</span>
+                            <span>10</span>
+                            <span>12</span>
+                            <span>14</span>
+                            <span>16</span>
+                        </div>
+                        <h4 style="width:60%;">Display (Inches)</h4>
+                    </div>
+                </div>
+                <div class="chart-4">
+                    <div class="chart-container">
+                        <div class="yaxis-labels">
+                            <h6>All Phones</h6>
+                            <h6>All Android Phones</h6>
+                            <h6>Current</h6>
+                        </div>
+                        <div class="gradient-container">
+                            <div class="gradient-1"></div>
+                            <div class="gradient-2"></div>
+                            <div class="gradient-3"></div>
+                        </div>
+                    </div>
+                    <div class="scale-container">
+                        <div class="scale">
+                            <span>0</span>
+                            <span>2</span>
+                            <span>4</span>
+                            <span>6</span>
+                            <span>8</span>
+                            <span>10</span>
+                            <span>12</span>
+                            <span>14</span>
+                            <span>16</span>
+                        </div>
+                        <h4 style="width:60%;">Battery (MAH)</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----Footer---- -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- ---Site info--- -->
+                <div class="media-footer">
+                    <h1>MEDIA</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos eum, ex tenetur esse laudantium quis asperiores? Natus dolores mollitia distinctio quae laudantium hic sint voluptatem
+                        , nobis, quasi voluptas saepe.</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <!-- ------Twitter feeds--- -->
+                <div class="twitter-footer">
+                    <h1>Twitter Feeds</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dignissimos eum, ex tenetur esse laudantium quis asperiores? Natus dolores mollitia distinctio quae laudantium hic sint voluptatem
+                        , nobis, quasi voluptas saepe.</p>
+                </div>
+                <!-- -------Image Gallery---- -->
+                <div class="insta-footer">
+                    <h1>Instagram Feeds</h1>
+                    <div class="image-grid">
+                        <img src="assets/insta1.jpg" alt="" srcset="">
+                        <img src="assets/insta2.jpg" alt="" srcset="">
+                        <img src="assets/insta1.jpg" alt="" srcset="">
+                        <img src="assets/insta2.jpg" alt="" srcset="">
+                        <img src="assets/insta1.jpg" alt="" srcset="">
+                        <img src="assets/insta2.jpg" alt="" srcset="">
+                        <img src="assets/insta1.jpg" alt="" srcset="">
+                        <img src="assets/insta2.jpg" alt="" srcset="">
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
     </div>
     <script src="main.js"></script>
 
