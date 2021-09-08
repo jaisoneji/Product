@@ -85,6 +85,26 @@
         height:40px;
         border-radius: 50px;
     }
+    .features-tabs{
+        display:flex;
+        background-color: white;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+    .feature-tab-cam{
+        background-color: #607CFF;
+        color:white!important;
+    }
+    .feature-tab{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:4rem;
+        justify-content: center;
+        align-items: center;
+        color: #15cfb5;
+    }
     /* -------Features overview section---- */
     .four-features{
         display: flex;
@@ -179,9 +199,6 @@
     .feature-detail-container{
         
         padding: 8px;
-    }
-    .feature-cols{
-        background-color: white;
     }
     .features-ad-related{
         display:flex;
